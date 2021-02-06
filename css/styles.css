@@ -1,0 +1,261 @@
+/* Общие стили */
+
+/** Декларирование переменных */
+:root {
+  --accent-color: #2196f3;
+  --main-txt-color: #212121;
+  --secondary-txt-color: #757575;
+  --main-bg-color: #fff;
+  --secondary-bg-color: #2f303a;
+  --main-font-name: 'Roboto';
+  --main-font-family: sans-serif;
+  --secondary-font-name: 'Raleway';
+  --secondary-font-family: sans-serif;
+}
+
+/** Невидимость */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/** Снятие подчеркивания с ссылок*/
+a {
+  text-decoration: none;
+}
+
+/** Снятие маркера со списков */
+.nav-list,
+.header-contacts-list,
+.advantages-list,
+.case-list,
+.team-list,
+.footer-contacts-list,
+.portfolio-btn-list,
+.portfolio-work-list {
+  list-style: none;
+}
+
+/** Задания базовых свойств елементам страниц*/
+body {
+  background-color: var(--main-bg-color);
+
+  font-family: var(--main-font-name), var(--main-font-family);
+  font-style: normal;
+  color: var(--main-txt-color);
+}
+
+/* Стилизация елементов страниц */
+
+/** Задание фона блокам hero и footer */
+.hero,
+.footer {
+  background-color: var(--secondary-bg-color);
+}
+
+/** Задание фона блоку team */
+.team {
+  background-color: #f5f4fa;
+}
+
+.logo {
+  font-family: var(--secondary-font-name), var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.header .logo-studio {
+  color: #000;
+}
+
+.footer .logo-studio {
+  color: #fff;
+}
+
+.header .logo-studio:hover,
+.header .logo-studio:focus,
+.footer .logo-studio:hover,
+.footer .logo-studio:focus {
+  color: var(--accent-color);
+}
+
+.nav-list a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--main-txt-color);
+}
+
+.header-contacts-list a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-txt-color);
+}
+
+.nav-studia.current,
+.nav-portfolio.current {
+  color: var(--accent-color);
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.header-contacts-list a:hover,
+.header-contacts-list a:focus,
+.footer-contacts-list a:hover,
+.footer-contacts-list a:focus {
+  color: var(--accent-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #fff;
+}
+
+.hero-button {
+  background-color: var(--accent-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  /* display: flex;
+  align-items: center; */
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #fff;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.advantages-list p,
+.team-list p,
+.portfolio-work-list p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-txt-color);
+}
+
+.portfolio-btn-list button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  background-color: #f5f4fa;
+  color: var(--main-txt-color);
+  border-style: none;
+  border-radius: 4px;
+}
+
+.portfolio-btn-list .btn-all {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+.portfolio-btn-list button:hover,
+.portfolio-btn-list button:focus {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+.portfolio-work-list .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+}
+
+.portfolio-work-list .type {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+
+  letter-spacing: 0.03em;
+}
+
+.address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.footer-contacts-list a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.observation-title,
+.punctuality-title,
+.planning-title,
+.technologies-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.case-title,
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-list .name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-list .position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
